@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        let answer;
+        // 작은 값을 먼저 구하기
+        if (a < b) answer = a;
+        else answer = b;
+        // 최소값 answer과 c를 비교하기
+        if (c < answer) answer = c;
+        // 최소값 answer보다 c가 작으면 그냥 지나간다.
+        return answer;
+      }
+
+      console.log(solution(6, 5, 11));
+    </script>
+  </body>
+</html>

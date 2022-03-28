@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      /* 다시 해보기 */
+      function solution(day, arr) {
+        let answer = 0;
+        for (let x of arr) {
+          // x는 자동차번호
+
+          if (x % 10 === day) answer++;
+          /**
+           * 어떤 값이든 10으로 나누면 마지막 번째 값이 남기 떄문에
+           * 나머지 값으로 day를 비교할 수 있게 된다.
+           * x를 10으로 나눴을 때 day 값이 나온다면 answer값을 더한다
+           * 예를 들어보자.
+           * arr 요소 중 25란 값을 10(10부제)으로 나눴을 때 5란 값이 나온다.
+           * 나머지 값 5는 주어진 day(3)과 같지 않으므로 answer를 더하지 않는다.
+           * arr 요소 중 23이란 값을 10(10부제)으로 나눴을 때 3이란 값이 나온다.
+           * 나머지 값 3은 주어진 day(3)과 같으므로 answer릎 더하게 된다.
+           * */
+        }
+
+        return answer;
+      }
+
+      arr = [25, 23, 11, 47, 53, 17, 33];
+      console.log(solution(3, arr));
+    </script>
+  </body>
+</html>
+
+<!-- 내가 푼 방식
+  let answer = 0; // answer의 초기화 선언
+        let str = "";
+        let num = 0;
+
+        for (let x of arr) {
+          // console.log(x); // 25, 23, 11, 47, 53, 17, 33
+          // arr 안의 요소들을 x 값으로 분해했다. 펼쳐놨다. 이 값을 가지고
+          // 끝자리와 day가 같은지 아닌지를 구분하면 될 것 같다.
+          // 첫자리값과 끝자리 값을 어떻게 분해하나?
+
+          // 1. x를 전부 string 값으로 변환해서 split api를 이용하여 분해한 후, 이 분해한 값의 1번쨰 index 값과 day를 비교하는 방법
+          // string을 어떤 기준으로 분해하는 split 함수를 이용하기 위해서
+          // x로 받아온 number 값을 전부 string으로 변환해보자
+
+          // x 값을 string으로 변환
+          let str = x.toString().split(""); 
+
+          // string으로 변환된 str을 다시 number로 변환해야 비교가 가능하다.
+          let numParse = Number.parseInt(str[1]);
+
+           // number로 변환된 numParse 값과 day를 비교
+          if (day === numParse) {
+
+           // 일치할 때마다 num에 1을 더해준다.
+            num += 1;
+          }
+        }
+        answer = num;
+        return answer; -->

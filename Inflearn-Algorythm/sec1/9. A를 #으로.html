@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      /* 첫번째 답 */
+      function solution(s) {
+        let answer = "";
+        for (let x of s) {
+          if (x == "A") answer += "#";
+          /* answer = "#" 를 하지 않는 이유
+           * '='으로 값을 지정해줄 경우, answer 변수에 '#' 하나만 저장이 되는 것만 반복한다.
+           * answer에 A만 "#"으로 바꾼 문자열을 저장하기 위해 '+' 연산자를 사용해서 누적해주는 것이다.
+           * 무조건 # 를 누적하는 것이 아니라 문자열에서 'A'를 만났을 때만 answer에 #를 누적하고,
+           * 'A'가 아니면 그냥 문자를 answer에 누적하는 것이다.
+           */ else answer += x;
+        }
+        return answer;
+      }
+
+      let str = "BANANA";
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      /* 두번째 답 replace(), 정규표현식 사용하기 */
+      function solution(s) {
+        let answer = s;
+        answer = answer.replace(/A/g, "#");
+        /* gi 글로벌로 설정하면, 굳이 반복문으로 찾아서 돌 필요가 없다. */
+        return answer;
+      }
+
+      let str = "BANANA";
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      /* 나의 답 : 정규표현식을 통한 구현 완료 */
+      function solution(str) {
+        let answer = "";
+        let a = /A/gi;
+
+        for (let x of str) {
+          if (x === "A") {
+            return str.replace(a, "#");
+          }
+        }
+
+        return answer;
+      }
+
+      let str = "BANANA";
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
