@@ -1,9 +1,9 @@
-# ✍🏻 Inflearn
+# ✍🏻 Inflearn Algorythm
 
 > Inflearn 의 "자바스크립트 알고리즘 문제풀이" 강의를 기반으로 풀이/정리 하였습니다.
 
-- [section 1](https://github.com/ichbinmin2/Algorythm/blob/main/Inflearn-Algorythm/inflearn/sec1/section1.md)
-- [section 2](https://github.com/ichbinmin2/Algorythm/blob/main/Inflearn-Algorythm/inflearn/sec2/section2.md)
+- [section 1](https://github.com/ichbinmin2/Algorythm/blob/main/Inflearn-Algorythm/sec1/section1.md)
+- [section 2](https://github.com/ichbinmin2/Algorythm/blob/main/Inflearn-Algorythm/sec2/section2.md)
 
 ## ✅ Reference
 
