@@ -5,6 +5,7 @@
 - [section 1](https://github.com/ichbinmin2/Algorythm/blob/main/Inflearn-Algorythm/sec1/section1.md)
 - [section 2](https://github.com/ichbinmin2/Algorythm/blob/main/Inflearn-Algorythm/sec2/section2.md)
 - [section 3](https://github.com/ichbinmin2/Algorythm/blob/main/Inflearn-Algorythm/sec3/section3.md)
+- [section 4](https://github.com/ichbinmin2/Algorythm/blob/main/Inflearn-Algorythm/sec4/section4.md)
 
 ## ✅ Reference
 
